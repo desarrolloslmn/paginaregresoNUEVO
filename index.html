@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4fb0e8">
+  <meta name="description" content="Landing page embebible para campaña de regreso a clases, sin menú ni footer, optimizada para iframe.">
+  <title>Regreso a Clases | Landing embebible</title>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="rac-landing" id="regreso-clases-landing">
+    <section class="rac-hero rac-section" aria-labelledby="rac-title">
+      <div class="rac-hero__glow rac-hero__glow--one" aria-hidden="true"></div>
+      <div class="rac-hero__glow rac-hero__glow--two" aria-hidden="true"></div>
+
+      <div class="rac-container rac-hero__grid">
+        <div class="rac-hero__content rac-reveal">
+          <span class="rac-eyebrow">Temporada escolar</span>
+          <h1 id="rac-title">Prepárate para un regreso a clases lleno de color, orden y creatividad.</h1>
+          <p>
+            Encuentra agendas, mochilas, útiles, accesorios y básicos para que estudiantes, papás y maestros empiecen el ciclo con todo listo.
+          </p>
+
+          <div class="rac-hero__actions" aria-label="Acciones principales">
+            <a class="rac-button rac-button--primary" href="#rac-productos">Ver productos</a>
+            <a class="rac-button rac-button--secondary" href="#rac-checklist">Armar checklist</a>
+          </div>
+
+          <div class="rac-hero__stats" aria-label="Beneficios principales">
+            <span><strong>Todo</strong> para crear</span>
+            <span><strong>Ofertas</strong> de temporada</span>
+            <span><strong>Compra</strong> fácil y rápida</span>
+          </div>
+        </div>
+
+        <div class="rac-hero__visual rac-reveal rac-reveal--delay" aria-label="Ilustración de regreso a clases" role="img">
+          <div class="rac-orbit rac-orbit--one" aria-hidden="true"></div>
+          <div class="rac-orbit rac-orbit--two" aria-hidden="true"></div>
+
+          <div class="rac-backpack" aria-hidden="true">
+            <div class="rac-backpack__handle"></div>
+            <div class="rac-backpack__body">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="rac-backpack__pocket"></div>
+          </div>
+
+          <div class="rac-school-card rac-school-card--agenda" aria-hidden="true">
+            <span>Agenda</span>
+            <strong>2026</strong>
+          </div>
+          <div class="rac-school-card rac-school-card--colors" aria-hidden="true">
+            <span>Color</span>
+            <i></i><i></i><i></i>
+          </div>
+          <div class="rac-floating-note" aria-hidden="true">Hasta 6 MSI</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rac-benefits" aria-label="Beneficios de compra">
+      <div class="rac-container rac-benefits__grid">
+        <article class="rac-reveal"><span>✦</span><div><strong>Regreso sin estrés</strong><small>Encuentra todo en un solo lugar.</small></div></article>
+        <article class="rac-reveal"><span>↗</span><div><strong>Productos destacados</strong><small>Con selección automatizada por IDs.</small></div></article>
+        <article class="rac-reveal"><span>✓</span><div><strong>Diseño ligero</strong><small>Optimizado para iframe y móvil.</small></div></article>
+        <article class="rac-reveal"><span>%</span><div><strong>Promos visibles</strong><small>Banners claros para impulsar compra.</small></div></article>
+      </div>
+    </section>
+
+    <section class="rac-section" aria-labelledby="rac-categorias-title">
+      <div class="rac-container">
+        <div class="rac-section-heading rac-reveal">
+          <span class="rac-eyebrow rac-eyebrow--blue">Explora por necesidad</span>
+          <h2 id="rac-categorias-title">Todo lo que hace falta para volver a clases.</h2>
+        </div>
+
+        <div class="rac-category-grid">
+          <a class="rac-category-card rac-category-card--yellow rac-reveal" href="#rac-productos">
+            <span class="rac-category-card__icon">✎</span>
+            <strong>Agendas y libretas</strong>
+            <small>Organiza tareas, horarios y proyectos.</small>
+          </a>
+
+          <a class="rac-category-card rac-category-card--blue rac-reveal" href="#rac-productos">
+            <span class="rac-category-card__icon">▣</span>
+            <strong>Mochilas escolares</strong>
+            <small>Diseños cómodos, prácticos y resistentes.</small>
+          </a>
+
+          <a class="rac-category-card rac-category-card--mint rac-reveal" href="#rac-productos">
+            <span class="rac-category-card__icon">◇</span>
+            <strong>Arte y papelería</strong>
+            <small>Colores, plumones, crayolas y básicos.</small>
+          </a>
+
+          <a class="rac-category-card rac-category-card--coral rac-reveal" href="#rac-productos">
+            <span class="rac-category-card__icon">⌘</span>
+            <strong>Accesorios útiles</strong>
+            <small>Complementos para estudiar mejor.</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rac-section rac-product-section" id="rac-productos" aria-labelledby="rac-productos-title">
+      <div class="rac-container">
+        <div class="rac-section-heading rac-section-heading--split rac-reveal">
+          <div>
+            <span class="rac-eyebrow rac-eyebrow--blue">Selección recomendada</span>
+            <h2 id="rac-productos-title">Productos clave para la temporada.</h2>
+          </div>
+          <p>
+            Este bloque usa el carrusel automatizado del sitio. Solo cambia los IDs dentro de <code>data-products</code> cuando necesites actualizar la selección.
+          </p>
+        </div>
+
+        <div class="rac-product-carousel-shell rac-reveal">
+          <div class="rac-product-carousel-shell__shine" aria-hidden="true"></div>
+          <div class="rac-product-carousel-shell__label">Carrusel automático</div>
+          <div class="bannerProductosLandingSection" data-products="342274,342273,263579,316656,343918,332515,301301,307686,356988,356987,346853,341451,285940,356993,307686,343924,346853">&nbsp;</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rac-section rac-section--soft" aria-labelledby="rac-promos-title">
+      <div class="rac-container">
+        <div class="rac-section-heading rac-reveal">
+          <span class="rac-eyebrow rac-eyebrow--blue">Promociones de temporada</span>
+          <h2 id="rac-promos-title">Banners pensados para vender más.</h2>
+        </div>
+
+        <div class="rac-promo-grid">
+          <article class="rac-promo-card rac-promo-card--wide rac-reveal">
+            <div>
+              <span class="rac-pill">Especial regreso a clases</span>
+              <h3>Arma el kit perfecto en minutos.</h3>
+              <p>Combina agenda, mochila, plumones y accesorios para iniciar el ciclo preparado.</p>
+              <a class="rac-button rac-button--light" href="#rac-productos">Comprar selección</a>
+            </div>
+            <div class="rac-kit-visual" aria-hidden="true">
+              <span>Agenda</span><span>Mochila</span><span>Plumones</span><span>Termo</span>
+            </div>
+          </article>
+
+          <article class="rac-promo-card rac-promo-card--dark rac-reveal">
+            <span class="rac-pill rac-pill--light">Para todos</span>
+            <h3>Estudiantes, maestros y creadores.</h3>
+            <p>Una campaña visual para impulsar productos escolares y creativos desde cualquier dispositivo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rac-section" aria-labelledby="rac-ruta-title">
+      <div class="rac-container rac-route-grid">
+        <div class="rac-route-copy rac-reveal">
+          <span class="rac-eyebrow rac-eyebrow--blue">Compra guiada</span>
+          <h2 id="rac-ruta-title">Una experiencia rápida para decidir mejor.</h2>
+          <p>
+            La landing guía al cliente desde la inspiración hasta los productos, sin agregar menú ni footer para no duplicar los elementos del sitio principal.
+          </p>
+        </div>
+
+        <div class="rac-route-list">
+          <article class="rac-route-item rac-reveal"><span>01</span><div><strong>Inspira</strong><small>Un hero colorido presenta la temporada y la intención de compra.</small></div></article>
+          <article class="rac-route-item rac-reveal"><span>02</span><div><strong>Organiza</strong><small>Categorías y banners ayudan a elegir más rápido.</small></div></article>
+          <article class="rac-route-item rac-reveal"><span>03</span><div><strong>Convierte</strong><small>El carrusel automatizado muestra productos reales del sitio.</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rac-section rac-checklist-section" id="rac-checklist" aria-labelledby="rac-checklist-title">
+      <div class="rac-container rac-checklist-grid">
+        <div class="rac-checklist-copy rac-reveal">
+          <span class="rac-eyebrow rac-eyebrow--blue">Checklist escolar</span>
+          <h2 id="rac-checklist-title">Marca lo que ya tienes y completa tu lista.</h2>
+          <p>Una dinámica sencilla para mantener al cliente dentro de la landing y empujarlo a revisar productos faltantes.</p>
+
+          <div class="rac-progress" aria-label="Avance del checklist">
+            <div class="rac-progress__label"><span>Avance</span><strong id="rac-progress-text">0%</strong></div>
+            <div class="rac-progress__bar"><span id="rac-progress-bar"></span></div>
+          </div>
+        </div>
+
+        <form class="rac-checklist rac-reveal" id="rac-school-checklist">
+          <label><input type="checkbox"><span>Agenda escolar o libreta principal</span></label>
+          <label><input type="checkbox"><span>Mochila resistente</span></label>
+          <label><input type="checkbox"><span>Plumas, lápices y marcadores</span></label>
+          <label><input type="checkbox"><span>Colores, crayolas o plumones</span></label>
+          <label><input type="checkbox"><span>Termo o lonchera</span></label>
+          <label><input type="checkbox"><span>Accesorios para organización</span></label>
+        </form>
+      </div>
+    </section>
+
+    <section class="rac-final-cta" aria-labelledby="rac-final-title">
+      <div class="rac-container rac-final-cta__inner rac-reveal">
+        <span class="rac-eyebrow rac-eyebrow--light">Listos para iniciar</span>
+        <h2 id="rac-final-title">Haz que este regreso a clases se vea increíble.</h2>
+        <p>Sin menú, sin footer y con el carrusel de productos automatizado listo para integrarse en tu página principal.</p>
+        <a class="rac-button rac-button--yellow" href="#rac-productos">Volver al carrusel</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
