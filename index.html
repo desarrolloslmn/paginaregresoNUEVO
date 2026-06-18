@@ -205,5 +205,37 @@
       </div>
     </section>
   </main>
+  <script>
+  (function () {
+    function sendHeight() {
+      var height = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight
+      );
+
+      window.parent.postMessage(
+        {
+          type: "landingHeight",
+          height: height + 20
+        },
+        "*"
+      );
+    }
+
+    window.addEventListener("load", sendHeight);
+    window.addEventListener("resize", sendHeight);
+
+    if ("ResizeObserver" in window) {
+      var observer = new ResizeObserver(sendHeight);
+      observer.observe(document.body);
+    }
+
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 1500);
+    setTimeout(sendHeight, 3000);
+  })();
+</script>
 </body>
 </html>
